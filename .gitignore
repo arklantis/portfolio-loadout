@@ -1,0 +1,17 @@
+# Production and review files that are not part of the public site
+/REVIEW/
+/styles.css
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary processing files
+__pycache__/
+*.py[cod]
+*.tmp
+*.bak
+*.log
