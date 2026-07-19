@@ -6,7 +6,7 @@ Portfolio Loadout was developed as an OpenAI Build Week project. It replaces a c
 
 ## Live demo
 
-Public deployment link will be added before the final Devpost submission.
+[Open Portfolio Loadout](https://arklantis.github.io/portfolio-loadout/)
 
 ## Core experience
 
