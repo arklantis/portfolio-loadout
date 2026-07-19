@@ -120,6 +120,7 @@
       <p class="eyebrow">${section.kicker || "Project detail"}</p><h2>${section.title}</h2>
       ${(section.body || []).map(paragraph => `<p>${paragraph}</p>`).join("")}
       ${section.points ? `<ul>${section.points.map(point => `<li>${point}</li>`).join("")}</ul>` : ""}
+      ${section.links?.length ? `<div class="button-row">${section.links.map(link => `<a class="button button-outline" href="${escapeAttr(link.url)}" target="_blank" rel="noreferrer">${link.label} &rarr;</a>`).join("")}</div>` : ""}
       ${section.note ? `<aside class="case-note"><strong>Current evidence status</strong><p>${section.note}</p></aside>` : ""}
       ${videoMarkup(section.videos)}
       ${mediaMarkup(section.media, section.title)}
