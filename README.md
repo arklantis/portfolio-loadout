@@ -18,7 +18,7 @@ Portfolio Loadout was developed as an OpenAI Build Week project. It replaces a c
 - Browse filterable project categories and reusable case-study pages.
 - Use a dedicated project menu on smaller screens where image hotspots would be difficult to identify.
 
-UI / Visual Design and 2D Art currently use the shared base avatar. Additional discipline-specific animations are planned extensions and are not required to navigate their content.
+UI / Visual Design and 2D Art now use dedicated class animations: a responsive-interface workflow and a speed-painting loop. These animations add character to each loadout without being required to navigate the portfolio content.
 
 ## Built with
 
@@ -91,7 +91,7 @@ The Build Week work includes the interactive studio, layered object states, day/
 
 ## Current scope and next steps
 
-The submission build prioritises a complete navigation and content loop over producing a unique animation for every loadout. Planned next steps include additional Technical Art, UI / Visual Design and 2D Art animations, clearer process evidence for selected case studies and further testing with recruiters and game-development professionals.
+The submission build prioritises a complete navigation and content loop. Planned next steps include additional animation variants, clearer process evidence for selected case studies and further testing with recruiters and game-development professionals.
 
 ## Content ownership
 

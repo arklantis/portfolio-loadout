@@ -40,14 +40,20 @@
       description:"I carry interface ideas through layout, responsive implementation and the visual production needed to keep a system consistent.",
       evidence:"<span><strong>30+</strong> client projects</span><span><strong>50+</strong> layouts</span><span><strong>RWD</strong> delivery</span>",
       gears:["Layout","Components","Responsive","Visual assets"], project:"Interface & Web Production", featureLabel:"FEATURED MISSION", action:"OPEN UI / VISUAL", link:"project.html?id=ui-production",
-      image:"https://static.wixstatic.com/media/e60170_58fd8f2d23d1434ab887929de0d85e59~mv2.jpg/v1/fill/w_700,h_394,al_c,q_85,enc_avif,quality_auto/web%20online01.jpg", imageAlt:"Interface and web production work", avatarLabel:"UI / VISUAL", avatarNote:"BASE AVATAR // DISCIPLINE DATA ACTIVE"
+      image:"https://static.wixstatic.com/media/e60170_58fd8f2d23d1434ab887929de0d85e59~mv2.jpg/v1/fill/w_700,h_394,al_c,q_85,enc_avif,quality_auto/web%20online01.jpg", imageAlt:"Interface and web production work", avatarLabel:"UI / VISUAL", avatarNote:"CLASS ANIMATION // RESPONSIVE UI SYSTEMS",
+      animations:[
+        {id:"responsive-ui",label:"RESPONSIVE UI",asset:"assets/media/avatar/classes/ui-responsive-loop.gif",alt:"Yen switching responsive previews as a web layout reflows from desktop to tablet and mobile"}
+      ]
     },
     art: {
       number:"CLASS 05", status:"VISUAL LOADOUT", code:"ART_2D // ACTIVE", title:"2D Artist &amp;<br>Game Visual Designer",
       panelLabel:"CURRENT DISCIPLINE", description:"I develop concept art, characters, game assets and interface visuals for personal and game projects.",
       evidence:"<span><strong>2D</strong> concepts</span><span><strong>Game</strong> assets</span><span><strong>UI</strong> visuals</span>",
       gears:["Concepts","Characters","Game assets","Illustration"], project:"2D Art & Game Assets", featureLabel:"WORK CATEGORY", action:"OPEN 2D ART", link:"project.html?id=2d-art",
-      image:"https://static.wixstatic.com/media/e60170_384c7588e278494ca4a379d6eea26da3~mv2.jpg", imageAlt:"2D art and game assets", avatarLabel:"2D ART", avatarNote:"BASE AVATAR // DISCIPLINE DATA ACTIVE"
+      image:"https://static.wixstatic.com/media/e60170_384c7588e278494ca4a379d6eea26da3~mv2.jpg", imageAlt:"2D art and game assets", avatarLabel:"2D ART", avatarNote:"CLASS ANIMATION // 2D SPEED PAINTING",
+      animations:[
+        {id:"speed-painting",label:"SPEED PAINTING",asset:"assets/media/avatar/classes/2d-art-speedpaint-loop.gif",alt:"Yen rapidly sketching and colouring a character portrait at an easel"}
+      ]
     }
   };
 
@@ -218,7 +224,7 @@
       const avatarFile = isProfile && motion ? `${motion.id}/${directionFile}.gif` : "idle/front.gif";
       const roleAnimation = !isProfile && motion?.asset;
       const avatarSource = roleAnimation ? motion.asset : `assets/media/avatar/${avatarFile}`;
-      avatarSprite.src = `${avatarSource}?v=20260719-5`;
+      avatarSprite.src = `${avatarSource}?v=20260721-1`;
       avatarSprite.alt = isProfile && motion
         ? `Yen pixel character, ${direction.alt} ${motion.alt.replace("front-facing ","")} animation`
         : roleAnimation
