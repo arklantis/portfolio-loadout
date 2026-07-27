@@ -29,7 +29,7 @@
       panelLabel:"CURRENT DISCIPLINE", description:"I develop real-time materials and practical production tools, including UE5 studies and a packaged batch-renaming workflow.",
       evidence:"<span><strong>UE5</strong> materials</span><span><strong>Python</strong> tools</span><span><strong>Blueprint</strong> motion</span>",
       gears:["Materials","Blueprint","Python tools","Pipelines"], project:"Slime Shader + Batch Renamer", featureLabel:"WORK CATEGORY", action:"OPEN TECH ART", link:"work.html?filter=technical",
-      image:"https://static.wixstatic.com/media/e60170_6e142c8626104cb5b6a7d076eb797805~mv2.png/v1/fill/w_700,h_394,al_c,q_90,enc_avif,quality_auto/batch_renamer_ui_demo.png", imageAlt:"Batch Renamer technical art tool", avatarLabel:"TECH ART", avatarNote:"CLASS ANIMATION // REAL-TIME PROTOTYPING",
+      image:"https://static.wixstatic.com/media/e60170_27e6c79926bd432c962a4fb4e92b7539f000.jpg/v1/fill/w_700,h_394,al_c,q_85,enc_avif,quality_auto/e60170_27e6c79926bd432c962a4fb4e92b7539f000.jpg", imageAlt:"Unreal Engine slime shader study", avatarLabel:"TECH ART", avatarNote:"CLASS ANIMATION // REAL-TIME PROTOTYPING",
       animations:[
         {id:"real-time-prototyping",label:"REAL-TIME PROTOTYPING",asset:"assets/media/avatar/classes/game-design-digital-loop.gif",alt:"Yen adjusting a holographic interaction flow and playtesting a real-time prototype"}
       ]
@@ -40,7 +40,7 @@
       description:"I carry interface ideas through layout, responsive implementation and the visual production needed to keep a system consistent.",
       evidence:"<span><strong>30+</strong> client projects</span><span><strong>50+</strong> layouts</span><span><strong>RWD</strong> delivery</span>",
       gears:["Layout","Components","Responsive","Visual assets"], project:"Interface & Web Production", featureLabel:"FEATURED MISSION", action:"OPEN UI / VISUAL", link:"project.html?id=ui-production",
-      image:"https://static.wixstatic.com/media/e60170_58fd8f2d23d1434ab887929de0d85e59~mv2.jpg/v1/fill/w_700,h_394,al_c,q_85,enc_avif,quality_auto/web%20online01.jpg", imageAlt:"Interface and web production work", avatarLabel:"UI / VISUAL", avatarNote:"CLASS ANIMATION // RESPONSIVE UI SYSTEMS",
+      image:"assets/media/portfolio/ui/baf/responsive.jpg", imageAlt:"Bio-architecture Formosana responsive portfolio interface", avatarLabel:"UI / VISUAL", avatarNote:"CLASS ANIMATION // RESPONSIVE UI SYSTEMS",
       animations:[
         {id:"responsive-ui",label:"RESPONSIVE UI",asset:"assets/media/avatar/classes/ui-responsive-loop.gif",alt:"Yen switching responsive previews as a web layout reflows from desktop to tablet and mobile"}
       ]
@@ -97,7 +97,11 @@
   const renderIndex = (filter = "all") => {
     const target = document.querySelector("#project-index");
     if (!target) return;
-    const selected = filter === "all" ? projects.filter(project => project.featured) : projects.filter(project => project.category === filter);
+    let selected = filter === "all" ? projects.filter(project => project.featured) : projects.filter(project => project.category === filter);
+    if (filter === "tabletop") {
+      const tabletopOrder = ["hegemony-bga", "my-plates", "spaghetti", "night-thieving-rats"];
+      selected = selected.sort((a,b) => tabletopOrder.indexOf(a.id) - tabletopOrder.indexOf(b.id));
+    }
     target.innerHTML = selected.map(card).join("");
     const count = document.querySelector("#project-count");
     if (count) count.textContent = `${String(selected.length).padStart(2,"0")} PROJECT${selected.length === 1 ? "" : "S"} DISPLAYED`;
@@ -118,7 +122,16 @@
     </div>` : "";
 
   const videoMarkup = (items = []) => items.length ? `<div class="case-video-grid">
-    ${items.map(item => `<figure><video controls playsinline preload="metadata"${item.poster ? ` poster="${escapeAttr(item.poster)}"` : ""}><source src="${item.src}"></video>${item.caption ? `<figcaption>${item.caption}</figcaption>` : ""}</figure>`).join("")}
+    ${items.map(item => {
+      const title = item.title || item.caption || "Project video";
+      const player = item.youtubeId
+        ? `<iframe src="https://www.youtube-nocookie.com/embed/${escapeAttr(item.youtubeId)}?rel=0" title="${escapeAttr(title)}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+        : `<video controls playsinline preload="metadata"${item.poster ? ` poster="${escapeAttr(item.poster)}"` : ""}><source src="${escapeAttr(item.src)}"></video>`;
+      const directLink = item.youtubeId
+        ? `<a href="https://youtu.be/${escapeAttr(item.youtubeId)}" target="_blank" rel="noreferrer">Watch on YouTube &rarr;</a>`
+        : "";
+      return `<figure>${player}${item.caption || directLink ? `<figcaption>${item.caption ? `<span>${item.caption}</span>` : ""}${directLink}</figcaption>` : ""}</figure>`;
+    }).join("")}
   </div>` : "";
 
   const sectionMarkup = section => `
@@ -166,7 +179,10 @@
     const facts = project.facts || [["Year", project.year], ["Role", project.role]];
     const sections = project.sections || [{kicker:"Project summary",title:project.subtitle,body:[project.summary]}];
     const currentIndex = projects.indexOf(project);
-    const next = projects[(currentIndex + 1) % projects.length];
+    const preferredNext = {
+      "events-exhibitions": "hegemony-bga"
+    };
+    const next = projects.find(item => item.id === preferredNext[project.id]) || projects[(currentIndex + 1) % projects.length];
     target.innerHTML = `
       <article>
         <header class="case-hero reveal">

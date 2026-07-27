@@ -107,7 +107,13 @@
           title: "Turning table negotiation into readable online states",
           body: ["The creator-side Board Game Arena implementation is in private alpha. Actions that happen naturally around a table need explicit permissions, prompts, hidden-information handling and feedback online."],
           points: ["Mapped physical rules into states and player actions", "Implemented the creator-side private-alpha build", "Kept digital outcomes aligned with the published rules"],
-          note: "Private-alpha screenshots, a state-flow diagram and one debugging example will be added when the material is ready."
+          videos: [
+            {
+              youtubeId: "yIpSJnHJE-w",
+              title: "Hegemony of FAITH — BGA Private-Alpha Gameplay",
+              caption: "Gameplay overview covering leader skills, believer recruitment, one-versus-all and one-versus-one confrontations, and final settlement."
+            }
+          ]
         }
       ],
       collections: [

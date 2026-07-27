@@ -460,9 +460,11 @@ body.cyber-home::before { opacity:.25; background-image:linear-gradient(rgba(32,
 .case-gallery-item span { display:flex; gap:10px; min-height:46px; align-items:center; padding:10px 12px; color:#c9d6e7; font-size:.7rem; }
 .case-gallery-item span b { color:var(--mint); font:800 .55rem monospace; }
 .case-video-grid { display:grid; gap:18px; margin-top:34px; }
-.case-video-grid figure { margin:0; border:1px solid var(--line); background:#080e1a; }
-.case-video-grid video { display:block; width:100%; max-height:620px; background:#02050a; }
-.case-video-grid figcaption { padding:11px 14px; color:var(--muted); font-size:.72rem; }
+.case-video-grid figure { margin:0; overflow:hidden; border:1px solid var(--line); background:#080e1a; box-shadow:0 20px 60px rgba(0,0,0,.22); }
+.case-video-grid video,.case-video-grid iframe { display:block; width:100%; aspect-ratio:16/9; border:0; background:#02050a; }
+.case-video-grid video { max-height:620px; }
+.case-video-grid figcaption { display:flex; justify-content:space-between; gap:20px; align-items:center; padding:13px 15px; color:var(--muted); font-size:.72rem; }
+.case-video-grid figcaption a { flex:0 0 auto; color:var(--mint); font:800 .58rem monospace; letter-spacing:.08em; text-transform:uppercase; }
 .case-library { width:min(1240px,calc(100% - 64px)); margin:20px auto 130px; }
 .case-library-heading { display:grid; grid-template-columns:.35fr 1fr .65fr; gap:42px; align-items:end; margin-bottom:38px; padding-bottom:30px; border-bottom:1px solid var(--line); }
 .case-library-heading h2 { margin:0; font-size:clamp(2.4rem,5vw,5.2rem); line-height:.95; }
@@ -491,6 +493,7 @@ body.cyber-home::before { opacity:.25; background-image:linear-gradient(rgba(32,
 }
 @media (max-width:620px) {
   .case-gallery,.case-collection-body>.case-gallery { grid-template-columns:1fr; }
+  .case-video-grid figcaption { align-items:flex-start; flex-direction:column; gap:8px; }
   .case-collection summary { grid-template-columns:30px 1fr; padding:17px 15px; }
   .case-collection summary em { grid-column:2; }
   .case-collection-body { padding:14px; }
