@@ -549,3 +549,5 @@ body:not(.adventure-ui) .studio-frame { background:#11182b; border-color:var(--l
   .gear-c { bottom:34%; }
   .gear-d { bottom:31%; }
 }
+
+.career-timeline .achievement-list article { grid-template-columns:minmax(150px, 190px) minmax(0, 1fr); } .career-timeline .achievement-list article div { grid-column:2 / -1; } @media (max-width:600px) { .career-timeline .achievement-list article { grid-template-columns:1fr; } .career-timeline .achievement-list article div { grid-column:1; } }
