@@ -59,21 +59,83 @@
   ];
 
   window.PORTFOLIO_PROJECTS = [
+{
+      "id": "loop-garden",
+      "title": "Loop Garden",
+      "subtitle": "A browser music sketchpad with editable arrangements",
+      "year": "2026",
+      "category": "ui",
+      "categoryLabel": "Product & Interaction Design",
+      "image": "https://raw.githubusercontent.com/arklantis/loop-garden/main/docs/screenshot.png",
+      "summary": "An experimental music tool combining humming, keyboard input and direct note editing in a four-track workspace.",
+      "role": "Independent project · Interaction design and implementation",
+      "tools": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Web Audio"
+      ],
+      "facts": [
+            [
+                  "Status",
+                  "Experimental prototype"
+            ],
+            [
+                  "Tracks",
+                  "Four"
+            ],
+            [
+                  "Languages",
+                  "English · Traditional Chinese"
+            ]
+      ],
+      "intro": "Loop Garden lets users start with a hummed phrase, keyboard performance, drawn notes or a generated arrangement, then edit the result in the same workspace.",
+      "sections": [
+            {
+                  "kicker": "01 · Interaction",
+                  "title": "Keep the arrangement editable",
+                  "body": [
+                        "Users can lock individual tracks while regenerating the others, change note pitch and duration, and save the complete editable project as JSON. MIDI, MusicXML and audio exports support different ways of continuing the work."
+                  ]
+            },
+            {
+                  "kicker": "02 · Scope",
+                  "title": "An experimental prototype",
+                  "body": [
+                        "Humming transcription works best with one clear voice and can make pitch and timing mistakes. Users review and edit the detected notes. Audio processing runs in the browser. External AI arrangement requests use copy-and-paste JSON; the app does not call an AI API."
+                  ]
+            }
+      ],
+      "links": [
+            {
+                  "label": "Source and local setup",
+                  "url": "https://github.com/arklantis/loop-garden"
+            },
+            {
+                  "label": "Interactive portfolio source",
+                  "url": "https://github.com/arklantis/portfolio-loadout"
+            },
+            {
+                  "label": "BGA development guidance",
+                  "url": "https://github.com/arklantis/bga-codex-agent"
+            }
+      ]
+},
     {
       id: "hegemony-bga",
       title: "Hegemony of FAITH",
-      subtitle: "Published social card game and ongoing BGA adaptation",
+      subtitle: "Published party card game and BGA public beta",
       year: "2023–present",
       category: "tabletop",
       categoryLabel: "Tabletop & System Design",
       featured: true,
       size: "wide",
       image: "https://static.wixstatic.com/media/e60170_799424338d784bcea077755896c2aebc~mv2.jpg/v1/fit/w_1600,h_900,q_90/02_JPG.jpg",
-      summary: "A 4–8 player party card game about belief, betrayal and control, published in Chinese and English and now being adapted for Board Game Arena.",
+      summary: "A 4–8 player party card game about belief, betrayal and control, published in Chinese and English and available for public beta testing on Board Game Arena.",
       role: "Lead Game Designer · Visual & Product Design · BGA Adaptation",
       tools: ["Rules design", "Tabletop prototyping", "Component design", "BGA Studio", "PHP", "JavaScript"],
-      facts: [["Players", "4–8"], ["Play time", "40–60 min"], ["Published", "Chinese 2023 · English 2024"], ["Current work", "BGA private alpha"]],
-      intro: "Each player leads a sect and tries to finish with the most believers. Power is unstable: leaders can surrender, merge sects, betray allies or continue as wanderers. The same system is now being translated into explicit online states and actions for a private BGA build.",
+      facts: [["Players", "4–8"], ["Play time", "40–60 min"], ["Published", "Chinese 2023 · English 2024"], ["Current work", "BGA public beta"]],
+      intro: "Each player leads a sect and tries to finish with the most believers. Power is unstable: leaders can surrender, merge sects, betray allies or continue as wanderers. The same system is now being translated into explicit online states and actions for the BGA adaptation, now in public beta testing.",
       sections: [
         {
           kicker: "01 · Game brief",
@@ -105,8 +167,8 @@
         {
           kicker: "04 · Digital adaptation",
           title: "Turning table negotiation into readable online states",
-          body: ["The creator-side Board Game Arena implementation is in private alpha. Actions that happen naturally around a table need explicit permissions, prompts, hidden-information handling and feedback online."],
-          points: ["Mapped physical rules into states and player actions", "Implemented the creator-side private-alpha build", "Kept digital outcomes aligned with the published rules"],
+          body: ["The creator-side Board Game Arena implementation is in public beta testing. Actions that happen naturally around a table need explicit permissions, prompts, hidden-information handling and feedback online."],
+          points: ["Mapped physical rules into states and player actions", "Implemented the creator-side build, now in public beta testing", "Kept digital outcomes aligned with the published rules"],
           videos: [
             {
               youtubeId: "yIpSJnHJE-w",
@@ -317,7 +379,7 @@
       role: "Visual Design · Layout · Responsive Front-end",
       tools: ["Illustrator", "HTML", "CSS", "jQuery", "Responsive layout", "Figma"],
       facts: [["Wewanted", "50+ layouts"], ["Children's culture site", "40+ templates/pages"], ["Delivery", "Design to front-end"], ["Archive", "42 retained screens"]],
-      intro: "This is production work rather than a single product case. The common task was to carry a visual direction through page structure, responsive behaviour and final front-end output.",
+      intro: "These commercial projects connect information structure, interface design and responsive implementation. My role varied by project: full website design and front-end delivery for BAF and Wewanted, and implementation from supplied artwork for the children's cultural books website.",
       sections: [
         { kicker: "01 · Bio-architecture Formosana", title: "Architecture portfolio and responsive maintenance", body: ["Designed the full website hierarchy, mobile adaptation and front-end implementation, then handled content updates. A Figma homepage prototype was later reconstructed as UI practice."], media: list("ui/baf", ["index.jpg", "responsive.jpg", "project-list.jpg", "project-detail.jpg", "about.gif"], ["Homepage", "Responsive views", "Project listing", "Project detail", "About-page motion"]) },
         { kicker: "02 · Wewanted", title: "Vehicle purchasing platform", body: ["Designed and implemented more than 50 public and member-only interface layouts using Illustrator, HTML, CSS and jQuery. The front-end was prepared for backend integration."], points: ["Visual design and layout", "Public and signed-in flows", "Responsive front-end", "Live platform"], media: [media(local("ui/legacy/web online01.jpg"), "Wewanted interface preview")], links: [{ label: "Visit the live Wewanted website", url: "https://wewanted.com.tw/" }] },

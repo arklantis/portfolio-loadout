@@ -4,8 +4,8 @@
 
   const loadouts = {
     profile: {
-      number:"PLAYER 01", status:"PROFILE LOADOUT", code:"PLAYER_DATA // ACTIVE", title:"Yen Chun Lin<br>Game &amp; Technical Designer",
-      panelLabel:"PLAYER PROFILE", description:"London-based designer working across game systems, technical art, interface production and 2D game visuals.",
+      number:"PLAYER 01", status:"PROFILE LOADOUT", code:"PLAYER_DATA // ACTIVE", title:"Yen Chun Lin<br>Product, UI &amp; Game Designer",
+      panelLabel:"PLAYER PROFILE", description:"London-based designer creating responsive interfaces, interactive prototypes and published games. My work connects visual design with practical implementation.",
       evidence:"<span><strong>London</strong> based</span><span><strong>2</strong> CV versions</span><span><strong>UK</strong> opportunities</span>",
       gears:["Profile","CV files","Experience","Contact"], project:"Profile + CV", featureLabel:"PLAYER FILE", action:"OPEN PROFILE + CV", link:"about.html",
       image:"assets/media/cyber-studio/layers/profile-files.png", imageAlt:"Profile and CV files", avatarLabel:"PROFILE", avatarNote:"BASIC MOTIONS // IDLE + WALK",
@@ -17,7 +17,7 @@
     game: {
       number:"CLASS 02", status:"DESIGN LOADOUT", code:"GAME_DESIGN // ACTIVE", title:"Game &amp;<br>System Designer",
       panelLabel:"CURRENT DISCIPLINE", description:"I design playable systems across tabletop and digital games, moving from rules and prototypes to implementation and iteration.",
-      evidence:"<span><strong>Tabletop</strong> systems</span><span><strong>Digital</strong> games</span><span><strong>BGA</strong> private alpha</span>",
+      evidence:"<span><strong>Tabletop</strong> systems</span><span><strong>Digital</strong> games</span><span><strong>BGA</strong> public beta</span>",
       gears:["Systems","Tabletop","Digital games","Iteration"], project:"Game Design: Digital + Tabletop", featureLabel:"WORK CATEGORY", action:"OPEN GAME WORK", link:"work.html",
       image:"https://static.wixstatic.com/media/e60170_799424338d784bcea077755896c2aebc~mv2.jpg/v1/fill/w_700,h_394,al_c,q_88,enc_avif,quality_auto/02_JPG.jpg", imageAlt:"Hegemony of FAITH game design work", avatarLabel:"GAME DESIGN", avatarNote:"CLASS ANIMATION // BOARD GAME DESIGN",
       animations:[
@@ -35,9 +35,9 @@
       ]
     },
     ui: {
-      number:"CLASS 04", status:"PRODUCTION LOADOUT", code:"UI_VISUAL // ACTIVE", title:"UI &amp; Visual<br>Designer",
+      number:"CLASS 04", status:"PRODUCTION LOADOUT", code:"UI_VISUAL // ACTIVE", title:"Product &amp; UI<br>Designer",
       panelLabel:"CURRENT DISCIPLINE",
-      description:"I carry interface ideas through layout, responsive implementation and the visual production needed to keep a system consistent.",
+      description:"I design interface structures and interactions, then build responsive front ends and working prototypes. Selected work includes a vehicle platform, cultural websites and independent tools.",
       evidence:"<span><strong>30+</strong> client projects</span><span><strong>50+</strong> layouts</span><span><strong>RWD</strong> delivery</span>",
       gears:["Layout","Components","Responsive","Visual assets"], project:"Interface & Web Production", featureLabel:"FEATURED MISSION", action:"OPEN UI / VISUAL", link:"project.html?id=ui-production",
       image:"assets/media/portfolio/ui/baf/responsive.jpg", imageAlt:"Bio-architecture Formosana responsive portfolio interface", avatarLabel:"UI / VISUAL", avatarNote:"CLASS ANIMATION // RESPONSIVE UI SYSTEMS",
