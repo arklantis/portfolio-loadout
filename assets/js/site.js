@@ -39,7 +39,7 @@
       panelLabel:"CURRENT DISCIPLINE",
       description:"I design interface structures and interactions, then build responsive front ends and working prototypes. Selected work includes a vehicle platform, cultural websites and independent tools.",
       evidence:"<span><strong>30+</strong> client projects</span><span><strong>50+</strong> layouts</span><span><strong>RWD</strong> delivery</span>",
-      gears:["Layout","Components","Responsive","Visual assets"], project:"Interface & Web Production", featureLabel:"FEATURED MISSION", action:"OPEN UI / VISUAL", link:"project.html?id=ui-production",
+      gears:["Layout","Components","Responsive","Visual assets"], project:"Rental Ledger + Commercial Interfaces", featureLabel:"PRODUCT / UI WORK", action:"OPEN PRODUCT / UI", link:"work.html?filter=ui",
       image:"assets/media/portfolio/ui/baf/responsive.jpg", imageAlt:"Bio-architecture Formosana responsive portfolio interface", avatarLabel:"UI / VISUAL", avatarNote:"CLASS ANIMATION // RESPONSIVE UI SYSTEMS",
       animations:[
         {id:"responsive-ui",label:"RESPONSIVE UI",asset:"assets/media/avatar/classes/ui-responsive-loop.gif",alt:"Yen switching responsive previews as a web layout reflows from desktop to tablet and mobile"}

@@ -60,6 +60,71 @@
 
   window.PORTFOLIO_PROJECTS = [
 {
+      "id": "rental-ledger",
+      "title": "Rental Ledger",
+      "subtitle": "Designing a clearer view of rental history in London",
+      "year": "2026",
+      "category": "ui",
+      "categoryLabel": "Product & Interaction Design",
+      "image": "assets/media/rental-ledger-cover.svg",
+      "summary": "A private MVP for address-based rental histories, structured contributions and evidence review.",
+      "role": "Independent product concept · AI-assisted development",
+      "tools": [
+            "Product specification",
+            "Interaction flows",
+            "React",
+            "TypeScript",
+            "MapLibre"
+      ],
+      "facts": [
+            [
+                  "Status",
+                  "Private pilot MVP"
+            ],
+            [
+                  "Market",
+                  "London"
+            ],
+            [
+                  "Source",
+                  "Private repository"
+            ]
+      ],
+      "intro": "Rental advertisements describe what is available now. Rental Ledger explores how people could inspect the history of an address: tenancy periods, rent and recorded property events. The MVP remains a private pilot.",
+      "sections": [
+            {
+                  "kicker": "01 · Product scope",
+                  "title": "History rather than listings or ratings",
+                  "body": [
+                        "The product centres on an address and its recorded history. It does not advertise availability, match tenants with landlords or assign people a trust score. This keeps the scope focused on information that can be attributed and reviewed."
+                  ]
+            },
+            {
+                  "kicker": "02 · Core flows",
+                  "title": "Search, inspect and contribute",
+                  "body": [
+                        "Map and postcode search lead to a property timeline. Structured submissions distinguish tenancy periods, residency and property events. Contributor and moderator flows have different permissions."
+                  ]
+            },
+            {
+                  "kicker": "03 · Information design",
+                  "title": "Make the evidence state visible",
+                  "body": [
+                        "User-submitted records, evidence-supported facts and conflicting accounts are distinct states. Supporting documents remain private. Review decisions are appended so the interface can retain a history of corrections without silently replacing earlier records."
+                  ]
+            },
+            {
+                  "kicker": "04 · Development and limits",
+                  "title": "A working private prototype",
+                  "body": [
+                        "The project combines a product specification with AI-assisted implementation. Source includes React and TypeScript interfaces for search, contributions and moderation, alongside evidence handling and interface tests.",
+                        "Public access and open source are future goals. Demonstration records are illustrative; the project does not yet establish public adoption or validated user outcomes."
+                  ]
+            }
+      ],
+      "links": []
+},
+{
       "id": "loop-garden",
       "title": "Loop Garden",
       "subtitle": "A browser music sketchpad with editable arrangements",
@@ -601,3 +666,4 @@
     }
   ];
 })();
+
