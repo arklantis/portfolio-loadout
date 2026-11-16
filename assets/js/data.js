@@ -222,7 +222,7 @@
         {
           kicker: "03 · Published editions",
           title: "From Taiwan release to international demonstrations",
-          body: ["The Chinese edition was published in Taiwan in 2023. The English edition followed in 2024 for the UK and EU market.", "The game has been demonstrated at UK Games Expo and SPIEL Essen, alongside events, talks and community activities in Taiwan."],
+          body: ["The Chinese edition was published in Taiwan in 2023. The English edition followed in 2024 for the UK and EU market.", "The English edition was showcased and sold at UK Games Expo 2024 and SPIEL Essen in 2024 and 2025. Both SPIEL Essen appearances were with TBD."],
           media: [
             media("https://static.wixstatic.com/media/e60170_c4f969686b2644dbb7b9c62522fcf82c~mv2.jpeg", "Live demo at UK Games Expo"),
             media("https://static.wixstatic.com/media/e60170_e2fb1f20752240848f088ca4e20cad02~mv2.jpg", "UK Games Expo booth"),
@@ -286,7 +286,7 @@
         {
           kicker: "01 · International exhibitions",
           title: "SPIEL Essen and UK Games Expo",
-          body: ["International exhibition records include booth presentation, live teaching, player sessions and the English edition in use."],
+          body: ["International appearances include UK Games Expo 2024 and SPIEL Essen in 2024 and 2025, with TBD at both SPIEL events. The existing gallery records booth presentation, live teaching, player sessions and the English edition in use."],
           media: eventGallery.slice(0, 15)
         },
         {
